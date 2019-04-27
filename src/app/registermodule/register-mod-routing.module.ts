@@ -4,11 +4,12 @@ import { RegisterComponent} from './register/register.component';
 
 const routes: Routes = [
 {path:"register", component:RegisterComponent}
-
+,{path:"", component:RegisterComponent}
+,{path:"**", component:RegisterComponent}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 export class RegisterRoutingModule { }

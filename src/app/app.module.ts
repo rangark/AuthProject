@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http'
 import { LoginModuleModule} from './loginmodule/loginmodule.module';
 import { RegisterModuleModule} from './registermodule/registermodule.module';
 
@@ -13,6 +14,7 @@ import { RegisterModuleModule} from './registermodule/registermodule.module';
   imports: [
     BrowserModule,
     AppRoutingModule
+    ,HttpClientModule
    // ,LoginModuleModule
    // ,RegisterModuleModule
   ],
